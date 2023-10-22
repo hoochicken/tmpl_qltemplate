@@ -11,6 +11,8 @@ h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong, .module-title 
 .no-color .module-title .color {font-weight: normal;}
 .btn.btn-secondary {background:white; color:black;}
 main > div {margin-top: 0;}
+.pl-0 {padding-left: 0;}
+.pr-0 {padding-right: 0;}
 /** GENERAL SETTING AND COLORING STOP */
 
 /** MENU FIXED START */

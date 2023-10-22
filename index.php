@@ -27,6 +27,11 @@ $wa->addInlineStyle($qltemplate->getTemplateStyles());
 ?>
 <!DOCTYPE html>
 <html lang="<?= $qltemplate->getLanguage() ?>">
+<head>
+    <jdoc:include type="metas" />
+    <jdoc:include type="styles" />
+    <jdoc:include type="scripts" />
+</head>
 <body id="page" class="page <?= $qltemplate->getBodyClass() ?>">
 <?php if ($this->countModules('body')) : ?>
     <jdoc:include type="modules" name="body" style="default" />
@@ -79,7 +84,7 @@ $wa->addInlineStyle($qltemplate->getTemplateStyles());
         <div class="sheet-body">
             <div class="wrapper grid-block content-texture ">
                 <div id="main" class="grid-block row">
-                    <div id="maininner" class="grid-box col col-md-<?= $qltemplate->getWidthContent() ?> col-sm-<?= $qltemplate->getWidthAll() ?>">
+                    <div id="maininner" class="grid-box col col-md-<?= $qltemplate->getWidthContent() ?> col-sm-<?= $qltemplate->getWidthAll() ?> <?= $this->countModules('sidebar-a') ? '' : 'pl-0' ?>  <?= $this->countModules('sidebar-b') ? '' : 'pr-0' ?>">
                         <section id="content" class="grid-block">
                             <?php if ($this->countModules('content-top')) : ?>
                                 <div class="content-top">
