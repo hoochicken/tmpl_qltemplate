@@ -1,0 +1,4 @@
+.doc {background:url('/templates/qltemplate/images/doc.png') no-repeat;padding:10px 40px 10px 0;display:inline-block;}
+.pdf {background:url('/templates/qltemplate/images/pdf.png') no-repeat;padding:10px 40px 10px 0;display:inline-block;}
+.xls {background:url('/templates/qltemplate/images/xls.png') no-repeat;padding:10px 40px 10px 0;display:inline-block;}
+.table.table-striped { }
