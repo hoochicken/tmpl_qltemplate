@@ -191,10 +191,4 @@ $wa->addInlineStyle($qltemplate->getTemplateStyles());
     </div>
 <?php endif; ?>
 </body>
-
-<head>
-    <jdoc:include type="metas" />
-    <jdoc:include type="styles" />
-    <jdoc:include type="scripts" />
-</head>
 </html>
