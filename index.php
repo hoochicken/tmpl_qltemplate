@@ -30,7 +30,6 @@ $wa->addInlineStyle($qltemplate->getTemplateStyles());
 <head>
     <jdoc:include type="metas" />
     <jdoc:include type="styles" />
-    <jdoc:include type="scripts" />
 </head>
 <body id="page" class="page <?= $qltemplate->getBodyClass() ?>">
 <?php if ($this->countModules('body')) : ?>
@@ -190,5 +189,7 @@ $wa->addInlineStyle($qltemplate->getTemplateStyles());
         <jdoc:include type="modules" name="debug" style="default"/>
     </div>
 <?php endif; ?>
+
+<jdoc:include type="scripts" />
 </body>
 </html>
