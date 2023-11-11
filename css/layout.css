@@ -1,4 +1,5 @@
 /** GENERAL SETTING AND COLORING START */
+body.component {background:transparent;}
 .clearfix:before,.clearfix:after,.grid-block:before,.grid-block:after,.deepest:before,.deepest:after {content: ""; display: table;}
 .clearfix:after,.grid-block:after,.deepest:after { clear: both; }
 .float-right {float:right;}
@@ -78,6 +79,8 @@ ul.sitemap > li {float:left; width:25%;}
 ul.sitemap > li.item101 {display:none;}
 ul.sitemap > li.item919 {display:none;}
 ul.sitemap li ul.small {font-size:1.0em!important;}
+body.sitemap .com-content-article__body > ul {margin-bottom:30px;}
+body.sitemap .com-content-article__body > ul:first-of-type > li > a {font-weight:bold;}
 /** SITEMAP STOP */
 
 /** einfache Sprache*/

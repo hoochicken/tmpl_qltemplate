@@ -7,6 +7,8 @@
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
+use Joomla\CMS\Event\Content\ContentPrepareEvent;
+
 defined('_JEXEC') or die;
 
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
@@ -125,8 +127,10 @@ if(false !== strpos($strPageclass, 'hide')) {
                     $params = new JRegistry($item);
                     $arrParamsDispatcher = ['com_content.article', &$item, &$params, 0];
                     $item->text = $item->introtext;
+
                     $dispatcher = Joomla\CMS\Factory::getApplication()->getDispatcher();
-                    $event = new Joomla\Event\Event('onContentPrepare', $arrParamsDispatcher);
+                    $event = new ContentPrepareEvent('onContentPrepare', $arrParamsDispatcher);
+
                     $res = $dispatcher->dispatch('onCheckAnswer', $event);
                     $item->introtext = $item->text;
                     echo $item->introtext;
